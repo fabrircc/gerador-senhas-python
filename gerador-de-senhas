@@ -1,0 +1,25 @@
+# 🔐 Gerador de Senhas Seguro (Desktop App)
+
+> **Resumo:** Aplicação desktop desenvolvida em Python (Flet) para geração de senhas criptograficamente seguras com análise de entropia em tempo real.
+
+## 🛠️ Tecnologias
+- **Linguagem:** Python 3.12
+- **Interface:** Flet (GUI)
+- **Segurança:** `secrets` (CSPRNG) & `zxcvbn` (Auditoria de força)
+- **Compilação:** PyInstaller (Standalone .exe)
+
+## 🚀 Funcionalidades
+1. **Geração Robusta:** Uso de `secrets` para aleatoriedade criptográfica.
+2. **Feedback Visual:** Barra de força da senha (Muito Fraca -> Muito Forte).
+3. **UX Moderna:** Modo escuro, slider de comprimento e cópia para clipboard.
+
+## 💻 Como Rodar (Código Fonte)
+```bash
+# Clone o repositório
+git clone [https://github.com/fabrircc/gerador-senhas-python.git](https://github.com/fabrircc/gerador-senhas-python.git)
+
+# Instale as dependências
+pip install flet zxcvbn
+
+# Execute
+python app.py
