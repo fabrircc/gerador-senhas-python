@@ -35,12 +35,12 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.1'  # Versão atualizada para satisfazer o Flet
+          flutter-version: '3.27.2'   # <--- Atualizamos para a versão que ele pediu
           channel: 'stable'
 
       - name: Build APK
         run: |
-          flet build apk --verbose
+          yes | flet build apk --verbose  # <--- O "yes |" responde "Sim" automaticamente
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
