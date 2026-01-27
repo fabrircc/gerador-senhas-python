@@ -1,0 +1,10 @@
+# Pastas de compilação do Python/Flet
+__pycache__/
+build/
+dist/
+*.spec
+
+# Arquivos de ambiente virtual (se tiver no futuro)
+venv/
+.env
+.flet/
