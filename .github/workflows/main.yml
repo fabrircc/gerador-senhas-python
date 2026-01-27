@@ -35,7 +35,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.1'
+          flutter-version: '3.27.1'  # Versão atualizada para satisfazer o Flet
           channel: 'stable'
 
       - name: Build APK
